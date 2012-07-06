@@ -14,6 +14,7 @@ url.resource.loader.modificationCheckInterval = 3600
 ```
 
 ## How can I test this?
-Maven installed and do a mvn jetty:run. Go to [http://localhost:8080/sitemesh-velocity]
+Maven installed and do a mvn jetty:run. Go to [http://localhost:8080/sitemesh-velocity](http://localhost:8080/sitemesh-velocity)
 
-Watch how the src/main/webapp/index.html has been decorated by [https://raw.github.com/judoole/sitemesh-examples/master/sitemesh-velocity/example-of-external-velocity.vm]
+Watch how the src/main/webapp/index.html has been decorated by
+[https://raw.github.com/judoole/sitemesh-examples/master/sitemesh-velocity/example-of-external-velocity.vm](https://raw.github.com/judoole/sitemesh-examples/master/sitemesh-velocity/example-of-external-velocity.vm)

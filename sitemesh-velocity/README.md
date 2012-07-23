@@ -1,4 +1,4 @@
-# Using Sitemesh with Velocity
+# Using Sitemesh 2 with Velocity
 
 Ever wanted to have your template decorator outside of your webapp? For example have your template stored in a cms system so that it's easily maintainable for all webapps?
 

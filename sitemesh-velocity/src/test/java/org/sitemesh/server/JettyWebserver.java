@@ -1,5 +1,6 @@
 package org.sitemesh.server;
 
+import org.apache.commons.lang.ArrayUtils;
 import org.mortbay.jetty.Handler;
 import org.mortbay.jetty.Server;
 import org.mortbay.jetty.handler.ResourceHandler;
@@ -16,6 +17,8 @@ public class JettyWebserver {
 
     public static void main(String[] args) throws Exception {
         System.out.println(format("Starting Jetty Webserver"));
+        //Defaulting to ENVIRONMENT=DEVELOPMENT.
+        System.setProperty("ENVIRONMENT", ArrayUtils.isEmpty(args) ? "DEVELOPMENT" : args[0]);
 
         Server server = new Server(PORT);
         server.addHandler(webAppContext());

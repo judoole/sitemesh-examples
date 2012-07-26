@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<web-app>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <display-name>sitemesh-velocity</display-name>
 
     <filter>
@@ -12,10 +13,16 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+
+
     <servlet>
         <servlet-name>velocity</servlet-name>
-        <servlet-class>com.opensymphony.module.sitemesh.velocity.VelocityDecoratorServlet</servlet-class>
+        <servlet-class>com.opensymphony.module.sitemesh.velocity.VelocityDecoratorServletSystemPropertiesAware</servlet-class>
         <load-on-startup>10</load-on-startup>
+        <init-param>
+            <param-name>org.apache.velocity.properties</param-name>
+            <param-value>/WEB-INF/velocity-${ENVIRONMENT}.properties</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>

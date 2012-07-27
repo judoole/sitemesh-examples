@@ -41,4 +41,4 @@ Maven installed and do a mvn jetty:run. Go to [http://localhost:8080/sitemesh-ve
 Watch how the src/main/webapp/index.html has been decorated by
 [https://raw.github.com/judoole/sitemesh-examples/master/sitemesh-velocity/example-of-external-velocity.vm](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/example-of-external-velocity.vm)
 
-You can also run it stand alone Jetty from static void main of [JettyWebServer](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/src/test/java/org/sitemesh/server/JettyWebserver.java)
+You can also run it stand alone Jetty from static void main of [JettyWebServer.java](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/src/test/java/org/sitemesh/server/JettyWebserver.java)

@@ -105,12 +105,12 @@
                         <contextPath>/sitemesh-velocity</contextPath>
                     </webAppConfig>
                     <scanIntervalSeconds>5</scanIntervalSeconds>
-                    <!--<systemProperties>
+                    <systemProperties>
                         <systemProperty>
                             <name>ENVIRONMENT</name>
                             <value>${environment}</value>
                         </systemProperty>
-                    </systemProperties>-->
+                    </systemProperties>
                 </configuration>
             </plugin>
         </plugins>

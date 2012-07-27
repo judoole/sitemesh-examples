@@ -43,4 +43,4 @@ Watch how the src/main/webapp/index.html has been decorated by
 
 You can also run it stand alone Jetty from static void main of [JettyWebserver.java](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/src/test/java/org/sitemesh/server/JettyWebserver.java)
 
-If you want to use a different velocity-${ENVIRONMENT}.properties do a mvn jetty:run -Denvironment=PRODUCTION or in JettyWebserver send in PRODUCTION as a Program parameter.
+If you want to use a different velocity-${ENVIRONMENT}.properties do a ````mvn jetty:run -Denvironment=PRODUCTION```` or in JettyWebserver send in PRODUCTION as a program parameter.

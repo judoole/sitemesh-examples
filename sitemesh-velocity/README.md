@@ -32,8 +32,8 @@ That's a bit tricky. In this example I had to override the Sitemesh [VelocityDec
     </init-param>
 </servlet>
 ````
-The ${ENVIRONMENT} will now be substituded with a System property or System environment variable if it exists either on the application container or the server it self.
-This is much like how Spring does it with ContextLoaderListener and the likes.
+The ${ENVIRONMENT} will now be substituted with a System property or System environment variable named ENVIRONMENT if it exists either on the application container or the server it self.
+This is much like how Spring does it with ````ContextLoader```` and the likes.
 
 ### How can I test this?
 Maven installed and do a mvn jetty:run. Go to [http://localhost:8080/sitemesh-velocity](http://localhost:8080/sitemesh-velocity)
@@ -41,4 +41,6 @@ Maven installed and do a mvn jetty:run. Go to [http://localhost:8080/sitemesh-ve
 Watch how the src/main/webapp/index.html has been decorated by
 [https://raw.github.com/judoole/sitemesh-examples/master/sitemesh-velocity/example-of-external-velocity.vm](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/example-of-external-velocity.vm)
 
-You can also run it stand alone Jetty from static void main of [JettyWebServer.java](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/src/test/java/org/sitemesh/server/JettyWebserver.java)
+You can also run it stand alone Jetty from static void main of [JettyWebserver.java](https://github.com/judoole/sitemesh-examples/blob/master/sitemesh-velocity/src/test/java/org/sitemesh/server/JettyWebserver.java)
+
+If you want to use a different velocity-${ENVIRONMENT}.properties do a mvn jetty:run -Denvironment=PRODUCTION or in JettyWebserver send in PRODUCTION as a Program parameter.
